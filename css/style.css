@@ -394,15 +394,16 @@
          * Remove most spacing between table cells.
          */
 
-      /*  table {
+        table {
             border-collapse: collapse;
             border-spacing: 0;
-        }*/
+        }
         table {
         border: 2px solid blue;
-        border-collapse: separate;
-        width: 300px;
-        margin: 0px 20px;
+        /*border-collapse: separate;*/
+        width: 225px;
+        margin: 20px 0px;
+
 
         }
         th, td {
@@ -463,7 +464,7 @@
       margin-top:2px;
       width: 960px;
       border-bottom: 2px solid #c9905b;
-      margin: 0 auto 20px 0px;
+      margin: 0 auto 10px 0px;
     }
 
     /* Grid >> Global
@@ -903,19 +904,21 @@
     right:20px;
     }
     .zebra {
-    /*position: absolute;*/
-    width:960px;
-    height:300px;
+    /*position: relative;*/
+    width:auto;
+    height:200px;
     margin-top: -10px;
     background: url('linear-gradient-stops.png') 0 0 repeat-y;
     background: linear-gradient(to bottom right, #f9d484 10%, #d0fbcd 30%, #fff9a3 50%, #f1d0bd 85%, #867a54);
      position: relative;
     /*top: 50px;}*/
   }
-    
+    .background2 {
+      background: white;
+    }
     .lower {
     position: relative;
-    top: 50px;
+    top: 25px;
     }
     /*Colors*/
     /*  
@@ -1144,7 +1147,9 @@
     text-shadow: none;
     text-transform: none;
   }
- Nav 
+/************************************/
+   /*Navigation*/
+/************************************/
   .primary-nav {
     float: left;
     margin-top: 2px;
@@ -1167,6 +1172,86 @@
   .nav-active a {
     cursor: default;
   }
+    #navigation
+   {
+   height:75px;
+   }
+
+   #utility
+   {
+   height:75px;
+   }
+
+   ul 
+   {
+   font-family: Arial, Verdana;
+   margin: 0;
+   padding: 0;
+   }
+   ul li 
+   {
+   display: block;
+   position: relative;
+   float: left;
+   font-size:16px;
+   }
+
+   li ul { display: none; }
+
+   #navigation ul
+   {margin:0px; padding:0px;}
+
+
+   ul li a 
+   {
+   display:block;
+   text-decoration: none;
+   color: white;
+   /*padding: 0px 10px 0px 15px;*/
+   position:relative;
+   margin: 0px 10px;
+   font-size: 16px;
+   width:130px;
+   /*float: left;*/
+
+   }
+
+   ul li a:hover 
+   { 
+   /*background: #355F9E;*/
+   background: black;
+   }
+
+   li:hover ul 
+   {
+   display: block;
+   position: absolute;
+   }
+
+   li:hover a 
+   { 
+     /*background: #355F9E;*/
+   background: black;
+   }
+
+   li:hover li a:hover 
+   { 
+   background: #BCCDD8;
+   }
+
+  .parent {
+  font-size: 20px;
+  color:white;
+}
+.navback {
+  background:black;
+  height: auto;
+  /*border-bottom: 200px blue;*/
+}
+
+/************************************/
+   /*Footer*/
+/************************************/
  Primary footer 
   .primary-footer {
     margin: 48px 0;
