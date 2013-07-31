@@ -223,7 +223,7 @@
          */
 
         img {
-            border: 0;
+            border: 0px;
         }
     
         /**
@@ -397,13 +397,12 @@
         table {
             border-collapse: collapse;
             border-spacing: 0;
-        }
-        table {
-        border: 2px solid blue;
-        /*border-collapse: separate;*/
-        width: 225px;
-        margin: 20px 0px;
-
+            border: 2px solid blue;
+            /*border-collapse: separate;*/
+            width: 225px;
+            margin: 20px 0px;
+            font-family: serif;
+            font-size: 13px;
 
         }
         th, td {
@@ -954,8 +953,8 @@
   }
   h2,
   .h-subheadline {
-    font-size: 36px;
-    line-height: 48px;
+    font-size: 24px;
+    line-height: 24px;
     /*margin-bottom: 24px;*/
   }
   h2{
