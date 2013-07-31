@@ -112,7 +112,7 @@
         /*h1 {*/
             /*font-size: 2em;*/
             /*margin: 0.67em 0;*/
-        }
+        /*}*/
 
         /**
          * Address styling not present in IE 8/9, Safari 5, and Chrome.
@@ -225,22 +225,7 @@
         img {
             border: 0;
         }
-        .coney {
-          position: absolute;
-          right:20px;
-        }
-
-        .zebra {
-          /*position: absolute;*/
-          width:960px;
-          height:300px;
-          background: url('linear-gradient-stops.png') 0 0 repeat-y;
-          background: linear-gradient(to bottom right, #f9d484 10%, #d0fbcd 30%, #fff9a3 50%, #f1d0bd 85%, #867a54);
-          }
-        .lower {
-          position: relative;
-          top: 50px;
-        }
+    
         /**
          * Correct overflow displayed oddly in IE 9.
          */
@@ -409,13 +394,17 @@
          * Remove most spacing between table cells.
          */
 
-      /*  table {
+        table {
             border-collapse: collapse;
             border-spacing: 0;
-        }*/
+        }
         table {
         border: 2px solid blue;
-        border-collapse: separate;
+        /*border-collapse: separate;*/
+        width: 225px;
+        margin: 20px 0px;
+
+
         }
         th, td {
         border: 2px solid red;
@@ -450,22 +439,6 @@
         vertical-align: super;
         font-size: .85em;
       }
-/*Colors*/
-  /*  
-  Purdue Gold: #B1946c;
-  Black: #000;
-  Blue: #591BE0
-  Orange: #E0591B
-  Green: #1BE059
-  
-  Rainbow Cone
-  Top Yellow: #f9d484;
-  Green: #d0fbcd;
-  Yellow: #fff9a3;
-  Strawberry: #f1d0bd;
-  Chocolate: #867a54;
-  */
-
 /* 960 Grid System 
   ~ Core CSS.
   Learn more ~ http://960.gs/
@@ -488,8 +461,10 @@
     .container_16 {
       margin-left: auto;
       margin-right: auto;
+      margin-top:2px;
       width: 960px;
-      margin: 20px 0px;
+      border-bottom: 2px solid #c9905b;
+      margin: 0 auto 10px 0px;
     }
 
     /* Grid >> Global
@@ -513,8 +488,8 @@
     .grid_16 {
       display: inline;
       float: left;
-      /*margin-left: 10px;*/
-      /*margin-right: 10px;*/
+      margin-left: 10px;
+      margin-right: 10px;
     }
 
     .push_1, .pull_1,
@@ -550,67 +525,67 @@
     /* Grid >> 16 Columns
     ----------------------------------------------------------------------------------------------------*/
 
-    .grid_1 {
+    .container_16 .grid_1 {
       width: 40px;
     }
 
-    .grid_2 {
+    .container_16 .grid_2 {
       width: 100px;
     }
 
-    .grid_3 {
+    .container_16 .grid_3 {
       width: 160px;
     }
 
-    .grid_4 {
+    .container_16 .grid_4 {
       width: 220px;
     }
 
-    .grid_5 {
+    .container_16 .grid_5 {
       width: 280px;
     }
 
-    .grid_6 {
+    .container_16 .grid_6 {
       width: 340px;
     }
 
-    .grid_7 {
+    .container_16 .grid_7 {
       width: 400px;
     }
 
-    .grid_8 {
+    .container_16 .grid_8 {
       width: 460px;
     }
 
-    .grid_9 {
+    .container_16 .grid_9 {
       width: 520px;
     }
 
-    .grid_10 {
+    .container_16 .grid_10 {
       width: 580px;
     }
 
-    .grid_11 {
+    .container_16 .grid_11 {
       width: 640px;
     }
 
-    .grid_12 {
+    .container_16 .grid_12 {
       width: 700px;
     }
 
-    .grid_13 {
+    .container_16 .grid_13 {
       width: 760px;
     }
 
-    .grid_14 {
+    .container_16 .grid_14 {
       width: 820px;
     }
 
-    .grid_15 {
+    .container_16 .grid_15 {
       width: 880px;
     }
 
-    .grid_16 {
+    .container_16 .grid_16 {
       width: 940px;
     }
 
@@ -866,60 +841,100 @@
       left: -900px;
     }
 
-    /* `Clear Floated Elements
-      Clear Fix
-    ----------------------------------------------------------------------------------------------------*/
+    /* `Clear Floated Elements / Clear Fix
+      ----------------------------------------------------------------------------------------------------*/
+        /* http://sonspring.com/journal/clearing-floats */
+        .container{
+          margin: 0 auto;
+          width: 960px;
+        }
+        .group:after {
+           content: " "; 
+           visibility: hidden;
+           display: block;
+           height: 0;
+           clear: both;
+        }
+        .clear {
+          clear: both;
+          display: block;
+          overflow: hidden;
+          visibility: hidden;
+          width: 0;
+          height: 0;
+        }
 
-    /* http://sonspring.com/journal/clearing-floats */
-    .container{
-      margin: 0 auto;
-      width: 960px;
-    }
-    .group:after {
-       content: " "; 
-       visibility: hidden;
-       display: block;
-       height: 0;
-       clear: both;
-    }
-    .clear {
-      clear: both;
-      display: block;
-      overflow: hidden;
-      visibility: hidden;
-      width: 0;
-      height: 0;
-    }
+              /* http://www.yuiblog.com/blog/2010/09/27/clearfix-reloaded-overflowhidden-demystified */
 
-    /* http://www.yuiblog.com/blog/2010/09/27/clearfix-reloaded-overflowhidden-demystified */
+            /*    .clearfix:before,
+                .clearfix:after,
+                .container_16:before,
+                .container_16:after {
+                  content: '.';
+                  display: block;
+                  overflow: hidden;
+                  visibility: hidden;
+                  font-size: 0;
+                  line-height: 0;
+                  width: 0;
+                  height: 0;
+                }
 
-    .clearfix:before,
-    .clearfix:after,
-    .container_16:before,
-    .container_16:after {
-      content: '.';
-      display: block;
-      overflow: hidden;
-      visibility: hidden;
-      font-size: 0;
-      line-height: 0;
-      width: 0;
-      height: 0;
-    }
+                .clearfix:after,
+                .container_16:after {
+                  clear: both;
+                }*/
+          /*
+            The following zoom:1 rule is specifically for IE6 + IE7.
+            Move to separate stylesheet if invalid CSS is a problem.
+          */
 
-    .clearfix:after,
-    .container_16:after {
-      clear: both;
+          .clearfix,
+          .container_16 {
+            zoom: 1;
+          }
+/*Custom Styles */
+    body {
+    background: lightblue;
+    font: "Arial, Helvetica, sans-serif";
+    margin: 0px 20px 0px 20px;
     }
-    /*
-      The following zoom:1 rule is specifically for IE6 + IE7.
-      Move to separate stylesheet if invalid CSS is a problem.
+    .coney {
+    position: absolute;
+    right:20px;
+    }
+    .zebra {
+    /*position: relative;*/
+    width:auto;
+    height:200px;
+    margin-top: -10px;
+    background: url('linear-gradient-stops.png') 0 0 repeat-y;
+    background: linear-gradient(to bottom right, #f9d484 10%, #d0fbcd 30%, #fff9a3 50%, #f1d0bd 85%, #867a54);
+     position: relative;
+    /*top: 50px;}*/
+  }
+    .background2 {
+      background: white;
+    }
+    .lower {
+    position: relative;
+    top: 25px;
+    }
+    /*Colors*/
+    /*  
+    Purdue Gold: #B1946c;
+    Black: #000;
+    Blue: #591BE0
+    Orange: #E0591B
+    Green: #1BE059
+
+    Rainbow Cone
+    Top Yellow: #f9d484;
+    Green: #d0fbcd;
+    Yellow: #fff9a3;
+    Strawberry: #f1d0bd;
+    Chocolate: #867a54;
     */
-
-    .clearfix,
-    .container_16 {
-      zoom: 1;
-    }
 /* Typography */
   h1, h2, h3, h4, h5, h6 {
     color: #B1946c;
@@ -986,6 +1001,76 @@
   code {
     color: #8f816a;
     font-family: "Source Code Pro", Inconsolata, "Lucida Console", Terminal, "Courier New", Courier;
+        }
+/* Links */
+  a {
+    color: #000;
+    text-decoration: none;
+    -webkit-transition: all .15s linear;
+       -moz-transition: all .15s linear;
+         -o-transition: all .15s linear;
+            transition: all .15s linear;
+  }
+  a:hover {
+    color: #c9905b;
+  }
+  .link-feat {
+    font: 700 15px/1 "PT Sans Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+  }
+/* List */
+  ul {
+    list-style: square;
+  }
+  .list-compact {
+    list-style: none;
+  }
+  .list-cols {
+    margin-bottom: 24px;
+    list-style: none;
+    margin:10px;
+    /*width:40px;*/
+    /*padding:20 0px;*/
+    float:left;
+  }
+  .list-cols li {
+    /*float: left;*/
+    margin: 0 20px;
+    width: 200px;
+  }
+  .list-cols li:nth-child(3n) {
+    margin-right: 0;
+  }
+  /* Misc styles */
+  .divider {
+    border-bottom: 2px solid #B1946c;
+    margin-bottom: 47px;
+    padding-bottom: 23px;
+  }
+  .lessons {
+    margin: 20px 0 0 0;
+    /*float:left;*/
+  }
+  .lessons h2 {
+    margin: 20px 0 ;
+  }
+  .lessons ul {
+    padding: 0 0 0 50px;
+  }
+  aside {
+    /*float: left;*/
+  left: 110px;
+  padding: 0 20px;
+  position: relative;
+  text-shadow: 0 1px 0 rgba(0,0,0,0.3);
+  width: 190px;
+  }
+  article {
+    /*float: left;*/
+  left: 741px;
+  margin: 20px 10px 20px 20px;
+  /*position: relative;*/
+  width: 700px;
   }
 /* Misc styles */
   .divider {
@@ -1021,26 +1106,31 @@
 /*Primary Header*/
   .primary-header {
     background: #9a9a9a;
-    border-bottom: 2px solid #c9905b;
+    /*border-bottom: 2px solid #c9905b;*/
     /*margin-bottom: 8px; */
     padding: 2px 0;
+    margin-top: -10px;
     display: block;
   }
   .primary-header h1 {
   letter-spacing: -1px;
   font-size: 54px;
   color: #fff;
-  /*padding-left: 15px;*/
-  /*line-height: 1;*/
-  /*margin-bottom: 0.2em;*/
-  /*width: 640px;*/
+  padding-left: 15px;
+  line-height: 1;
+  margin-bottom: 0.2em;
+  width: 640px;
+  }
+
+  .centerimage {
+    text-align: center;
   }
   .centertext {
     text-align: center;
   }
-/* Logo */
+ Logo 
   .primary-logo {
-    /*float: left;*/
+    float: left;
     width:960px;
     line-height: 1;
     margin-left: 10px;
@@ -1057,28 +1147,14 @@
     text-shadow: none;
     text-transform: none;
   }
-/* Links */
-  a {
-    color: #000;
-    text-decoration: none;
-    -webkit-transition: all .15s linear;
-       -moz-transition: all .15s linear;
-         -o-transition: all .15s linear;
-            transition: all .15s linear;
-  }
-  a:hover {
-    color: #c9905b;
-  }
-  .link-feat {
-    font: 700 15px/1 "PT Sans Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    text-transform: uppercase;
-  }
-/* Nav */
+/************************************/
+   /*Navigation*/
+/************************************/
   .primary-nav {
     float: left;
     margin-top: 2px;
     margin-bottom: 2px;
-    /*padding-left: 50px;*/
+    padding-left: 50px;
   }
   .primary-nav li {
     float: left;
@@ -1087,7 +1163,7 @@
   .primary-nav a {
     color: #965d51;
     font-family: 'Comfortaa', cursive;
-    /*font: 700 18px/24px "PT Sans Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif;*/
+    font: 700 18px/24px "PT Sans Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif;
   }
   .primary-nav a:hover,
   .nav-active a {
@@ -1096,32 +1172,89 @@
   .nav-active a {
     cursor: default;
   }
-/* List */
-  ul {
-    list-style: square;
-  }
-  .list-compact {
-    list-style: none;
-  }
-  .list-cols {
-    margin-bottom: 24px;
-    list-style: none;
-    margin:10px;
-    /*width:40px;*/
-    /*padding:20 0px;*/
-    float:left;
-  }
-  .list-cols li {
-    /*float: left;*/
-    margin: 0 20px;
-    width: 200px;
-  }
-  .list-cols li:nth-child(3n) {
-    margin-right: 0;
-  }
-/* Primary footer */
+    #navigation
+   {
+   height:75px;
+   }
+
+   #utility
+   {
+   height:75px;
+   }
+
+   ul 
+   {
+   font-family: Arial, Verdana;
+   margin: 0;
+   padding: 0;
+   }
+   ul li 
+   {
+   display: block;
+   position: relative;
+   float: left;
+   font-size:16px;
+   }
+
+   li ul { display: none; }
+
+   #navigation ul
+   {margin:0px; padding:0px;}
+
+
+   ul li a 
+   {
+   display:block;
+   text-decoration: none;
+   color: white;
+   /*padding: 0px 10px 0px 15px;*/
+   position:relative;
+   margin: 0px 10px;
+   font-size: 16px;
+   width:130px;
+   /*float: left;*/
+
+   }
+
+   ul li a:hover 
+   { 
+   /*background: #355F9E;*/
+   background: black;
+   }
+
+   li:hover ul 
+   {
+   display: block;
+   position: absolute;
+   }
+
+   li:hover a 
+   { 
+     /*background: #355F9E;*/
+   background: black;
+   }
+
+   li:hover li a:hover 
+   { 
+   background: #BCCDD8;
+   }
+
+  .parent {
+  font-size: 20px;
+  color:white;
+}
+.navback {
+  background:black;
+  height: auto;
+  /*border-bottom: 200px blue;*/
+}
+
+/************************************/
+   /*Footer*/
+/************************************/
+ Primary footer 
   .primary-footer {
     margin: 48px 0;
-    /*float: left;*/
+    float:left;
     text-align: center;
     }
