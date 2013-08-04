@@ -223,7 +223,7 @@
          */
 
         img {
-            border: 0;
+            border: 0px;
         }
     
         /**
@@ -395,15 +395,14 @@
          */
 
         table {
-            border-collapse: collapse;
-            border-spacing: 0;
-        }
-        table {
-        border: 2px solid blue;
-        /*border-collapse: separate;*/
-        width: 225px;
-        margin: 20px 0px;
-
+            border-collapse: separate;
+            border-spacing: 2px;
+            border: 2px solid blue;
+            /*border-collapse: separate;*/
+            width: 225px;
+            margin: 20px 0px;
+            font-family: serif;
+            font-size: 13px;
 
         }
         th, td {
@@ -920,6 +919,18 @@
     position: relative;
     top: 25px;
     }
+
+    .call {
+      position: absolute;
+      width:200px;
+      height: 100px;
+      color: blue;
+      background: red;
+      bottom: 5px;
+      right: 75px;
+      opacity: .5;
+    }
+
     /*Colors*/
     /*  
     Purdue Gold: #B1946c;
@@ -954,8 +965,8 @@
   }
   h2,
   .h-subheadline {
-    font-size: 36px;
-    line-height: 48px;
+    font-size: 24px;
+    line-height: 24px;
     /*margin-bottom: 24px;*/
   }
   h2{
