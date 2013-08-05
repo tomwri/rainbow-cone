@@ -13,7 +13,7 @@ h1{
   margin: 8px 0;
   text-shadow: 0 0 1px #000;
 }
-h2{
+/*h2{
   font-family:'Bitter';
   font-size:20px;
   font-weight:normal;
@@ -22,7 +22,7 @@ h2{
   text-align:center;
   margin: 6px 0;
   text-transform:lowercase;
-}
+}*/
 
 h3{
   margin:8px 0;
@@ -97,7 +97,7 @@ p.centered{
   background:#fff;
   padding:15px;
   box-shadow: 0 0 20px #999;
-  border-radius:20px;
+  border-radius:2px;
 }
 
 ul.gallery{
@@ -131,7 +131,7 @@ ul.gallery li h5{
 #map,
 #panorama {
   height:300px;
-  background:#6699cc;
+  /*background:#6699cc;*/
 }
 
 #sponsors {

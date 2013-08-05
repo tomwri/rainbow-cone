@@ -400,11 +400,13 @@
             border: 2px solid blue;
             /*border-collapse: separate;*/
             width: 225px;
+            height: 160px;
             margin: 20px 0px;
             font-family: serif;
             font-size: 13px;
 
         }
+
         th, td {
         border: 2px solid red;
         }
@@ -462,7 +464,7 @@
       margin-right: auto;
       margin-top:2px;
       width: 960px;
-      border-bottom: 2px solid #c9905b;
+      /*border-bottom: 2px solid #c9905b;*/
       margin: 0 auto 10px 0px;
     }
 
@@ -922,14 +924,23 @@
 
     .call {
       position: absolute;
-      width:200px;
-      height: 100px;
-      color: blue;
-      background: red;
+      width:350px;
+      height: 25px;
+      color: black;
+      background: blue;
       bottom: 5px;
-      right: 75px;
-      opacity: .5;
+      right: 20px;
+      /*opacity: .5;*/
+      font-size: 20px;
     }
+
+    .pictures {
+      /*position: absolute;*/
+          height: 160px;
+          top: 200px;
+          /*line-height: 200px;*/
+          vertical-align: middle;
+        }
 
     /*Colors*/
     /*  
@@ -950,7 +961,7 @@
   h1, h2, h3, h4, h5, h6 {
     color: #B1946c;
     font-family: 'Veranda', 'Helvetica','Arial';
-    /*font-family: "PT Sans Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif;*/
+    font-family: "PT Sans Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: 700;
   }
   h1,
@@ -963,30 +974,37 @@
     top: 200px;
     left:480px;
   }
-  h2,
-  .h-subheadline {
-    font-size: 24px;
-    line-height: 24px;
-    /*margin-bottom: 24px;*/
-  }
-  h2{
+
+  h1, h2, h3, h4, h5, h6 {
+    font-size: 32px;
+    line-height: 32px;
+    text-transform: uppercase;
     text-align: center;
   }
-  h3,
+ /* h2,
+  .h-subheadline {
+    font-size: 24px;
+    line-height: 24px;*/
+    /*margin-bottom: 24px;*/
+  }
+  /*h2{
+    text-align: center;
+  }*/
+  /*h3,
   .h-byline {
     font-size: 24px;
     margin-bottom: 24px;
-  }
-  h4,
+  }*/
+  /*h4,
   .h-standfirst {
     font-size: 21px;
     margin-bottom: 24px;
     padding-left: 10px;
-  }
-  h5,
+  }*/
+ /* h5,
   .h-related {
     font-size: 18px;
-  }
+  }*/
   /*paragraph*/
   p {
     margin-bottom: 10px;
@@ -1139,6 +1157,9 @@
   .centertext {
     text-align: center;
   }
+  .lefttext {
+    text-align: left;
+  }
  Logo 
   .primary-logo {
     float: left;
@@ -1222,7 +1243,7 @@
    position:relative;
    margin: 0px 10px;
    font-size: 16px;
-   width:130px;
+   width:170px;
    /*float: left;*/
 
    }
@@ -1265,7 +1286,8 @@
 /************************************/
  Primary footer 
   .primary-footer {
+    /*padding: 10px 10px;*/
     margin: 48px 0;
-    float:left;
-    text-align: center;
+    /*float:left;*/
+    text-align: left;
     }
