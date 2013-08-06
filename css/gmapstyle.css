@@ -1,11 +1,11 @@
-body{
+/*body{
   background:#f3f3f3;
   margin:0;
   padding:0;
   font-family: 'Helvetica', 'Arial', sans-serif;
-}
+}*/
 
-h1{
+/*h1{
   font-family: 'Convergence';
   font-size: 95px;
   text-align: center;
@@ -13,7 +13,7 @@ h1{
   margin: 8px 0;
   text-shadow: 0 0 1px #000;
 }
-/*h2{
+h2{
   font-family:'Bitter';
   font-size:20px;
   font-weight:normal;
@@ -24,22 +24,22 @@ h1{
   text-transform:lowercase;
 }*/
 
-h3{
+/*h3{
   margin:8px 0;
 }
 
 h4{
   margin:6px 0;
-}
+}*/
 
-a{
+/*a{
   color: #5588bb;
   text-decoration:none;
 }
 a:hover{
   text-decoration:underline;
 }
-
+*/
 p.big{
   font-family:'Droid Sans';
   font-size:24px;
