@@ -71,14 +71,6 @@
          * Remove default margin.
          */
 
-        /*body {*/
-        /*  width: 960px;
-            margin: 0;
-            background: #fff;*/
-            /*background: url('linear-gradient-stops.png') 0 0 repeat-y;*/
-            /*background: linear-gradient(to bottom right, #f9d484 10%, #d0fbcd 30%, #fff9a3 60%, #f1d0bd 85%, #867a54);*/
-        }
-
         /* ==========================================================================
            Links
            ========================================================================== */
@@ -897,6 +889,7 @@
           }
 /*Custom Styles */
      body{
+    min-width: 960px;
     background:#f3f3f3;
     margin:0;
     padding:0;
@@ -942,15 +935,15 @@
           vertical-align: middle;
         }
 
- .containerall {
+ /*.containerall {
   position: absolute;
     width: 1000px;
     margin:0px auto;
-    padding: 0px 15px 15px 15px;
+    padding: 0px 5px 5px 5px;
     background:purple;
-    }
+    }*/
     .background2 {
-      position: relative;
+      position: absolute;
       background: green;
       width: 960px;
       margin: 5px;
@@ -1302,6 +1295,6 @@
   .primary-footer {
     /*padding: 10px 10px;*/
     margin: 48px 0;
-    /*float:left;*/
-    text-align: left;
+    float:none;
+    text-align: center;
     }
