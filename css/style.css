@@ -432,25 +432,14 @@
         vertical-align: super;
         font-size: .85em;
       }
-/* 960 Grid System 
+ /*960 Grid System 
   ~ Core CSS.
-  Learn more ~ http://960.gs/
+  Learn more ~ http://960.gs/*/
 
-  Licensed under GPL and MIT.
-  */
-  /*
-  Forces backgrounds to span full width,
-  even if there is horizontal scrolling.
-  Increase this if your layout is wider.
+  /*Licensed under GPL and MIT.*/
 
-  Note: IE6 works fine without this fix.
-  */
- /* body {
-    min-width: 960px;
-    background: black;
-  }*/
   /* Container
-    ----------------------------------------------------------------------------------------------------*/
+    ----------------------------------------------------------------------------------------------------
 
     .container_16 {
       margin-left: auto;
@@ -458,9 +447,9 @@
       margin-top:2px;
       width: 960px;
       /*border-bottom: 2px solid #c9905b;*/
-      margin: 0 auto 10px 0px;
+   /*   margin: 0 auto 10px 0px;
     }
-
+*/
     /* Grid >> Global
     ----------------------------------------------------------------------------------------------------*/
 
@@ -895,6 +884,7 @@
     padding:0;
     font-family: 'Helvetica', 'Arial', sans-serif;
     }
+    
     .coney {
     position: absolute;
     right:20px;
@@ -928,10 +918,8 @@
     }
 
     .pictures {
-      /*position: absolute;*/
           height: 160px;
           top: 200px;
-          /*line-height: 200px;*/
           vertical-align: middle;
         }
 
@@ -942,13 +930,7 @@
     padding: 0px 5px 5px 5px;
     background:purple;
     }*/
-    .background2 {
-      position: absolute;
-      background: green;
-      width: 960px;
-      margin: 5px;
-      padding: 15px;
-    }
+ 
     /*Colors*/
     /*  
     Purdue Gold: #B1946c;
