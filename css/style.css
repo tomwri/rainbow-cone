@@ -393,7 +393,7 @@
             /*border-collapse: separate;*/
             width: 225px;
             height: 160px;
-            margin: 20px 0px;
+            /*margin: 20px 0px;*/
             font-family: serif;
             font-size: 13px;
 
@@ -923,13 +923,14 @@
           vertical-align: middle;
         }
 
- /*.containerall {
-  position: absolute;
+ .containerall {
+  /*position: absolute;*/
     width: 1000px;
-    margin:0px auto;
-    padding: 0px 5px 5px 5px;
-    background:purple;
-    }*/
+    margin:auto auto;
+    /*padding: 0px 5px 5px 5px;*/
+    /*background:purple;*/
+    /*WHY DOESN'T THIS WORK IF YOU ACTIVATE THE BACKGROUND?*/
+    }
  
     /*Colors*/
     /*  
