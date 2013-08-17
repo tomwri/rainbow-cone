@@ -408,7 +408,8 @@
         background: linear-gradient(#687587, #404853);
         color: #fff;
         }
-        tbody tr:nth-child(even) td {
+        /*tbody tr:nth-child(even) */
+        td {
         background: #e8eae9;
         background: linear-gradient(#f7faf9, #e8eae9);
         }
@@ -880,7 +881,7 @@
      body{
     min-width: 960px;
     background:#f3f3f3;
-    margin:0;
+    margin:-10px auto;
     padding:0;
     font-family: 'Helvetica', 'Arial', sans-serif;
     }
@@ -925,12 +926,11 @@
 
  .containerall {
   /*position: absolute;*/
-    width: 1000px;
-    margin:auto auto;
+    width: 960px;
+    margin:0px auto;
     /*padding: 0px 5px 5px 5px;*/
-    /*background:purple;*/
-    /*WHY DOESN'T THIS WORK IF YOU ACTIVATE THE BACKGROUND?*/
-    }
+    background:pink;
+   }
  
     /*Colors*/
     /*  
