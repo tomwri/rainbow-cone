@@ -1274,6 +1274,11 @@
 /************************************/
    /*Footer*/
 /************************************/
+ footer,
+ footer a{
+  color:white;
+ }
+
  Primary footer 
   .primary-footer {
     /*padding: 10px 10px;*/
