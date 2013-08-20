@@ -244,14 +244,15 @@ proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
   });
   </script>
 
+<!-- 8-19-13 reinstall backstretch with correct paths  -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 <script src="../js/jquery.backstretch.min.js"></script>
-<script src="../js/cloudfare.js"></script>
 <script>
   // To attach Backstrech as the body's background
-  $.backstretch("../img/sign.jpeg");
+  $.backstretch("../img/rainbowconebackdrop.jpeg");
 
   // You may also attach Backstretch to a block-level element
-  $(".foo").backstretch("../img/sign.jpeg");
+  $(".foo").backstretch("path/to/image.jpg");
 
   // Or, to start a slideshow, just pass in an array of images
   $(".foo").backstretch([
@@ -260,7 +261,6 @@ proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
     "path/to/image3.jpg"    
   ], {duration: 4000});
 </script>
-
 
   <!-- END OF JQUERY -->
 <!-- CLOSE HTML -->
