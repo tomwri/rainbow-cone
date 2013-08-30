@@ -1289,7 +1289,10 @@
     float:none;
     text-align: center;
     }
+.small-screens
+   { display: none; visibility: hidden; }
 
+/*Media Query 1*/
 @media screen and (max-width: 900px) {
   .containerall {
     background: blue;
@@ -1299,8 +1302,6 @@
   .lower,
   .parent,
   .primary-footer,
-  /*.popin,*/
-  /*.map,*/
   .grid_4,
   h4,
   h3,
@@ -1310,8 +1311,20 @@
   p{
     display:none;
   }
+
 }
 
+/*Media Query 2*/
 @media screen and (min-width: 400px) {
+   .small-screens
+   { color: red; background-color: black; }
+}
+
+.map,
+  .popin {
+    display:block;
+  }
+
+/* want some text to show up when it gets below 400px, possibly an image as well*/
 
 }
