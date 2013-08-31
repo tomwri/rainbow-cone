@@ -1197,9 +1197,12 @@
   .nav-active a {
     cursor: default;
   }
-    #navigation
+    .navigation
    {
-   height:75px;
+   height:2.1333em;
+   background:black;
+   height: auto;
+   /*border-bottom: 200px blue;*/
    }
 
    #utility
@@ -1268,11 +1271,6 @@
   font-size: 1.25em; /*20px*/
   color:white;
 }
-.navback {
-  background:black;
-  height: auto;
-  /*border-bottom: 200px blue;*/
-}
 
 /************************************/
    /*Footer*/
@@ -1290,28 +1288,73 @@
     text-align: center;
     }
 
-@media screen and (max-width: 900px) {
+.medium-screens {
+  display:none;
+}
+.small-screens {
+  display:none;
+}
+
+/*Media Query 1*/
+@media screen and (max-width: 780px) {
   .containerall {
     background: blue;
   }
   .zebra,
   .call,
   .lower,
-  .parent,
   .primary-footer,
-  /*.popin,*/
-  /*.map,*/
   .grid_4,
   h4,
   h3,
   table,
   .pictures, 
-  .backstretch,
+  .map,
+  .popin,
   p{
     display:none;
   }
+
 }
 
-@media screen and (min-width: 400px) {
+/*Media Query 2*/
+@media screen and (max-width: 780px) {
+  
+ .medium-screens
+   {margin-top:10px; 
+    display:block;
+    color: red; background-color: black; }
+}
+
+.small-screens {
+  display:none;
+}
+
+.zebra {
+  display:block;
+}
+
+/*Media Query 3*/
+@media screen and (max-width: 400px) {
+  
+  .medium-screens,
+  .zebra {
+    display:none;
+  }
+
+ .small-screens {
+    margin-top:10px; 
+    display:block;
+    color: red; 
+    background-color: black; 
+  }
+
+  .parent,
+  .pictures {
+    display:block;
+  }
+
+}
+/* want some text to show up when it gets below 400px, possibly an image as well*/
 
 }

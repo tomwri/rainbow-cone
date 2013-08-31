@@ -1,0 +1,25 @@
+@media screen and (max-width: 900px) {
+  .containerall {
+    background: blue;
+  }
+  .zebra,
+  .call,
+  .lower,
+  .parent,
+  .primary-footer,
+  /*.popin,*/
+  /*.map,*/
+  .grid_4,
+  h4,
+  h3,
+  table,
+  .pictures, 
+  .backstretch,
+  p{
+    display:none;
+  }
+}
+
+@media screen and (min-width: 400px) {
+
+}
