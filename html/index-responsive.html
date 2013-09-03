@@ -26,21 +26,23 @@
 <div class="container_16 centertext group">
 <div class="grid_16">
       <!-- GRID 16 CENTERTEXT CLOSED -->
-            <div class="zebra">
+            <!-- <div class="zebra"> -->
             <!-- ZEBRA CLOSED -->
                   <div class="lower">
                   <!-- LOWER CLOSED -->
-                <img src="../img/pinkcone.jpg" width="900" height="150" data-lightbox ="cage" alt="cone">
-                              <div class="nametag">
+                  
+                <h1 class="fancy_title">Rainbow Cone</h1>
+
+                             <!--  <div class="nametag"> -->
                               <!-- CALL CLOSED -->
                               
-                            Call for Custom Orders: 555-555-5555
+                            <!-- Call for Custom Orders: 555-555-5555
                           
-                            </div> 
+                            </div>  -->
                             <!-- ABOVE CLOSES CALL -->
                 </div>
                 <!-- ABOVE CLOSES LOWER -->
-          </div>
+          <!-- </div> -->
           <!-- ABOVE CLOSES ZEBRA -->
     </div>
     </div>
@@ -228,7 +230,6 @@ proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 </body>
 <!-- CLOSED BODY -->
 <!-- START OF JQUERY -->
-
   <script src="../js/jquery-1.10.2.min.js"></script>
   <script src="../js/lightbox-2.6.min.js"></script>
   <script src="../js/gmaps.js"></script>
@@ -254,10 +255,10 @@ proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
   });
   </script>
 
-<!-- 8-19-13 reinstall backstretch with correct paths  -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-<script src="../js/jquery.backstretch.min.js"></script>
-<script>
+  <!-- 8-19-13 reinstall backstretch with correct paths  -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script src="../js/jquery.backstretch.min.js"></script>
+  <script>
   // To attach Backstrech as the body's background
   $.backstretch("../img/rainbowconebackdrop.jpeg");
 
@@ -266,12 +267,18 @@ proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
   // Or, to start a slideshow, just pass in an array of images
   $(".foo").backstretch([
-    "path/to/image.jpg",
-    "path/to/image2.jpg",
-    "path/to/image3.jpg"    
+  "path/to/image.jpg",
+  "path/to/image2.jpg",
+  "path/to/image3.jpg"    
   ], {duration: 4000});
-</script>
+  </script>
 
+  <script src="../js/jquery.lettering-0.6.min.js"></script>
+  <script>
+  $(document).ready(function() {
+  $(".fancy_title").lettering();
+  });
+  </script>
   <!-- END OF JQUERY -->
 <!-- CLOSE HTML -->
 </html>
