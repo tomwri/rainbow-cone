@@ -950,13 +950,42 @@
     Chocolate: #867a54;
     */
 /* Typography */
-  h1, h2, h3, h4, h5, h6 {
+h1 {
+  font-size:4em;
+  background: #fff;
+  width:100%;
+  text-align: center;
+}
+
+  h1 span:nth-child(1),
+  h1 span:nth-child(6),
+  h1 span:nth-child(11) {
+  color: #f9d484;
+  }
+  h1 span:nth-child(2),
+  h1 span:nth-child(7),
+  h1 span:nth-child(12) {
+  color: #d0fbcd;
+  }
+  h1 span:nth-child(3),
+  h1 span:nth-child(8) {
+  color: #fff9a3;
+  }
+  h1 span:nth-child(4),
+  h1 span:nth-child(9) {
+  color: #f1d0bd;
+  }
+  h1 span:nth-child(5),
+  h1 span:nth-child(10) {
+  color: #867a54;
+  }
+  h2, h3, h4, h5, h6 {
     color: #B1946c;
     font-family: 'Veranda', 'Helvetica','Arial';
     font-family: "PT Sans Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: 700;
   }
-  h1,
+  
   .h-headline {
     font-size: 2em;
     line-height: 2em;
@@ -967,12 +996,16 @@
     left:480px;
   }
 
-  h1, h2, h3, h4, h5, h6 {
+   h2, h3, h4, h5, h6 {
     font-size: 2em;
     line-height: 2em;
     text-transform: uppercase;
     text-align: center;
   }
+
+  h1:hover {
+  top:3px;
+}
  /* h2,
   .h-subheadline {
     font-size: 24px;
@@ -1315,10 +1348,28 @@
     display:none;
   }
 
+h1 {
+  width:60%;
+}
+ .medium-screens
+   {margin-top:10px; 
+    display:block;
+    color: red; background-color: black; }
+}
+
+.small-screens {
+  display:none;
+}
+
+.fancy_title,
+.lower{
+  display:block;
+}
+
 }
 
 /*Media Query 2*/
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 500px) {
   
  .medium-screens
    {margin-top:10px; 
@@ -1330,7 +1381,8 @@
   display:none;
 }
 
-.zebra {
+.fancy_title,
+.lower{
   display:block;
 }
 
@@ -1342,19 +1394,20 @@
     display:none;
   }
 
- .small-screens {
+h1,
+.pictures{
+  width:40%;
+}
+
+ .parent,
+  .pictures {
+    display:block;
+}
+
+.small-screens {
     margin-top:10px; 
     display:block;
     color: red; 
     background-color: black; 
   }
-
-  .parent,
-  .pictures {
-    display:block;
-  }
-
-}
-/* want some text to show up when it gets below 400px, possibly an image as well*/
-
 }
