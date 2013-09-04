@@ -1329,7 +1329,36 @@ h1 {
 }
 
 /*Media Query 1*/
+
+@media screen and (max-width: 400px) {
+  
+  .medium-screens,
+  .zebra {
+    display:none;
+  }
+
+h1,
+.pictures{
+  width:40%;
+}
+/*not working because the lettering css is blocking it from working. correct and fix in the lettering css so that it drops down and has the hover ability*/
+ 
+ .parent,
+  .pictures {
+    display:block;
+}
+
+.small-screens {
+    margin-top:10px; 
+    display:block;
+    color: red; 
+    background-color: black; 
+  }
+}
+
+/*Media Query 1*/
 @media screen and (max-width: 780px) {
+ 
   .containerall {
     background: blue;
   }
@@ -1348,14 +1377,11 @@ h1 {
     display:none;
   }
 
-h1 {
-  width:60%;
-}
  .medium-screens
    {margin-top:10px; 
     display:block;
-    color: red; background-color: black; }
-}
+    color: red; background-color: black; 
+  }
 
 .small-screens {
   display:none;
@@ -1365,9 +1391,14 @@ h1 {
 .lower{
   display:block;
 }
-
+h1,
+.pictures {
+  display:block;
+  width:70%;
 }
 
+}
+/*what is going on with the media queries? should they be in reverse order where mobile is first? should they be mins instead of max? find a good resource to determine whether to use min or max. */
 /*Media Query 2*/
 @media screen and (max-width: 500px) {
   
@@ -1377,12 +1408,19 @@ h1 {
     color: red; background-color: black; }
 }
 
-.small-screens {
+.small-screens,
+.medium-screens {
   display:none;
 }
 
 .fancy_title,
 .lower{
+  display:block;
+}
+
+h1,
+.pictures {
+  width:50%;
   display:block;
 }
 
@@ -1398,7 +1436,8 @@ h1,
 .pictures{
   width:40%;
 }
-
+/*not working because the lettering css is blocking it from working. correct and fix in the lettering css so that it drops down and has the hover ability*/
+ 
  .parent,
   .pictures {
     display:block;
@@ -1410,4 +1449,9 @@ h1,
     color: red; 
     background-color: black; 
   }
+  img {
+    width:35%;
+  }
+
+/*figure out how to scale images down*/
 }
