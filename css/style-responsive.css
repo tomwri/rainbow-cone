@@ -1303,6 +1303,8 @@ h1 {
   .parent {
   font-size: 1.25em; /*20px*/
   color:white;
+  /*text-align: center;*/
+  /*width:100%;*/
 }
 
 /************************************/
@@ -1328,35 +1330,8 @@ h1 {
   display:none;
 }
 
-/*Media Query 1*/
 
-@media screen and (max-width: 400px) {
-  
-  .medium-screens,
-  .zebra {
-    display:none;
-  }
-
-h1,
-.pictures{
-  width:40%;
-}
-/*not working because the lettering css is blocking it from working. correct and fix in the lettering css so that it drops down and has the hover ability*/
- 
- .parent,
-  .pictures {
-    display:block;
-}
-
-.small-screens {
-    margin-top:10px; 
-    display:block;
-    color: red; 
-    background-color: black; 
-  }
-}
-
-/*Media Query 1*/
+/*Media Query Tablet*/
 @media screen and (max-width: 780px) {
  
   .containerall {
@@ -1398,20 +1373,36 @@ h1,
 }
 
 }
-/*what is going on with the media queries? should they be in reverse order where mobile is first? should they be mins instead of max? find a good resource to determine whether to use min or max. */
-/*Media Query 2*/
-@media screen and (max-width: 500px) {
-  
- .medium-screens
-   {margin-top:10px; 
-    display:block;
-    color: red; background-color: black; }
-}
 
-.small-screens,
+/*Media Query Moblie*/
+
+@media screen and (max-width: 480px) {
+   .containerall {
+    background: blue;
+  }
+  .zebra,
+  .call,
+  .lower,
+  .primary-footer,
+  .grid_4,
+  h4,
+  h3,
+  table,
+  .pictures, 
+  .map,
+  .popin {
+    display:none;
+  }
+
+  .medium-screens,
+  .zebra {
+    display:none;
+  }
+
+/*.small-screens,
 .medium-screens {
   display:none;
-}
+}*/
 
 .fancy_title,
 .lower{
@@ -1419,29 +1410,47 @@ h1,
 }
 
 h1,
-.pictures {
-  width:50%;
-  display:block;
-}
-
-/*Media Query 3*/
-@media screen and (max-width: 400px) {
-  
-  .medium-screens,
-  .zebra {
-    display:none;
-  }
-
-h1,
 .pictures{
   width:40%;
+  /*display:block;*/
 }
 /*not working because the lettering css is blocking it from working. correct and fix in the lettering css so that it drops down and has the hover ability*/
  
+ p {
+  display: block;
+  margin-left: 5%;
+    width:40%;
+    margin-right: 5%;
+  /*text-align: center;*/
+ }
  .parent,
   .pictures {
+    text-align: center;
     display:block;
 }
+  .parent {
+    width: 100%;
+    /*float: none;*/
+  }
+  .img1,
+  .img2,
+  .img3 {
+    width:20%;
+  }
+
+img {
+  display: none;
+}
+
+ .popin,
+  .map,
+  p {
+    text-align: center;
+    display: block;
+    margin-left: 5%;
+    width:40%;
+    margin-right: 5%;
+  }
 
 .small-screens {
     margin-top:10px; 
@@ -1449,9 +1458,6 @@ h1,
     color: red; 
     background-color: black; 
   }
-  img {
-    width:35%;
-  }
 
-/*figure out how to scale images down*/
+
 }
