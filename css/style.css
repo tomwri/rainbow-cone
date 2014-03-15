@@ -404,7 +404,8 @@
         }
 
         th {
-        background: #404853;
+        /*background: #404853;*/
+        background: #fff
         background: linear-gradient(#687587, #404853);
         color: #fff;
         }
